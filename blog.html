@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-common">
+    <h1 class="text-center text-green-500 text-5xl my-3 border-b-2 py-3">
+      Frequently Asked Question
+    </h1>
+    <section class="px-10 gap-10">
+      <div>
+        <h1 class="text-2xl my-3">
+          Q1: What is the key difference between map, forEach, filter, find
+          function in JavaScript?
+        </h1>
+        Ans:
+        <p>
+          <strong>map():</strong>map() method use for an array. map() returns a
+          new array from an existing array element. <br />example:
+          <code class="text-red-400"
+            >const newArray = existingArray.map((item) => item*2)</code
+          >
+        </p>
+        <p>
+          <strong>forEach():</strong>forEach() method also use for an array.
+          forEach() doesn't return a new array from an existing array element.
+          <br />example:
+          <code class="text-red-400"
+            >existingArray.forEach((item) => console.log(item))</code
+          >
+        </p>
+        <p>
+          <strong>filter():</strong>filter() method use for an array. filter()
+          returns a new array from an existing array element where the element
+          satisfies the condition. <br />example:
+          <code class="text-red-400"
+            >const newArray = existingArray.filter(item => item%2)</code
+          >
+        </p>
+        <p>
+          <strong>find():</strong>find() method use for an array. find() return
+          a first element from an existing array element that satisfies the
+          condition. <br />example:
+          <code class="text-red-400"
+            >const element = existingArray.find(item => item%2)</code
+          >
+        </p>
+      </div>
+      <div>
+        <h1 class="text-2xl my-3">
+          Q2: What is the key difference between Local Storage, Session Storage
+          and Cookies in JavaScript?
+        </h1>
+        Ans:
+        <p>
+          <strong>Local Storage:</strong>Local Storage is a web storage method
+          that helps us store data on the client’s computer in the form of
+          key/value pairs in a web browser. The data is stored in local storage
+          for a lifetime unless the user manually deletes it from the browser.
+          It does not expire even when the user closes the window or tab.
+        </p>
+        <p>
+          <strong>Session Storage:</strong>Session Storage is very similar to
+          the local storage. Still, the main difference lies in the lifespan as
+          it persists in the browser until its current tab is on. Once you close
+          the tab or terminate it, the data on session storage also gets lost.
+        </p>
+        <p>
+          <strong>Cookies:</strong>A cookie is an amount of information that
+          persists between a server-side and a client-side. A web browser stores
+          this information at the time of browsing. A cookie contains the
+          information as a string generally in the form of a name-value pair
+          separated by semi-colons.
+        </p>
+      </div>
+    </section>
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+      Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+  </body>
+</html>
