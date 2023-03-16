@@ -106,6 +106,42 @@
           separated by semi-colons.
         </p>
       </div>
+
+      <div>
+        <h1 class="text-2xl my-3">
+          Q3: What is the functionality mechanism of quizTimer() and
+          chooseQuiz() function?
+        </h1>
+        <p>
+          <strong> Functionality mechanism of quizTimer(): </strong>
+          quizTimer() function created for count the total time consumed for
+          answering all the quiz.quizTimer() function call two times and passed
+          parameter true and not passed any value from index.js file. At first
+          it check a condition if have a value of dismiss varaible that is true
+          then enter 'if' block and clearInterval and return.If dismiss haven't
+          any value then setInterval execute and countHtml varaible store an
+          element which id is count then covtMin varaible store the minute by
+          divided the current count value by 60 and mod varaible store the
+          second by modules the current count value then min varaible store the
+          formatted minute and countSec store the formatted second and add min
+          and sec in countHtml using innerHtml then increment the count varaible
+          value. Check the count varaible ,if count greater than 60 then enter
+          if block and if count is even number then add text-red-700 class and
+          remove text-red-300 class else block worked as opposite of if
+          block.setTimeInterval used 1000ms.
+        </p>
+        <p>
+          <strong> Functionality mechanism of chooseQuiz(): </strong>
+          chooseQuiz() function created for select answer of quizes. When
+          clicked any option from quiz then create click event and call the
+          chooseQuiz() function and passed two argument one is id and another is
+          chossen option. isExist varaible store the value from answers array if
+          ans.id === quizData[index].id equal. If isExist is true then entered
+          if block and check if allready answerd the question and choose again
+          then just modify the option and break otherwise push the answer array
+          the information of new answer.
+        </p>
+      </div>
     </section>
     <!-- Footer section start -->
     <footer class="py-10 text-center text-sm">

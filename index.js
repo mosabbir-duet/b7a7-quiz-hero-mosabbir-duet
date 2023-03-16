@@ -189,5 +189,5 @@ document.querySelector("#submit").addEventListener("click", () => {
 
 
 const openBlog = () => {
-  window.location.href = "./blog.html"
+  window.open("./blog.html","_blank")
 }
